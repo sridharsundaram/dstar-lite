@@ -74,7 +74,7 @@ Here is a list of the more interesting tweaks that we applied to improve the D* 
 (cellA.g != cellB.g) return (cellA.g <  cellB.g)
 return ((euclidean_dist(cellA,start) + euclidean_dist(cellA,goal))
        < (euclidean_dist(cellB,start) + euclidean_dist(cellB,goal)))
-       ```
+```
 This means we break ties by choosing the cell that lies closest to the straight line between the start and goal states.
 
 3. Goal Changes
