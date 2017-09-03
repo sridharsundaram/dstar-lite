@@ -407,21 +407,21 @@ void Dstar::getSucc(state u,list<state> &s) {
   if (occupied(u)) return;
 
   u.x += 1;
-  s.push_front(u);
+  s.push_front(u); // 1,0
   u.y += 1;
-  s.push_front(u);
+  s.push_front(u); // 1,1
   u.x -= 1;
-  s.push_front(u);
+  s.push_front(u); // 0,1
   u.x -= 1;
-  s.push_front(u);
+  s.push_front(u); //-1,1
   u.y -= 1;
-  s.push_front(u);
+  s.push_front(u); //-1, 0
   u.y -= 1;
-  s.push_front(u);
+  s.push_front(u); // -1, -1
   u.x += 1;
-  s.push_front(u);
+  s.push_front(u); // 0, -1
   u.x += 1;
-  s.push_front(u);
+  s.push_front(u); // 1, -1
 
 }
 

@@ -51,6 +51,7 @@ class state {
 
 };
 
+// A grid cell
 struct ipoint2 {
   int x,y;
 };
