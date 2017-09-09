@@ -581,7 +581,7 @@ bool Dstar::replan() {
       val += getG(*i);
 
       if (close(val,cmin)) {
-        if (tmin > val2) {
+        if (cmin > val2) {
           tmin = val2;
           cmin = val;
           smin = *i;
